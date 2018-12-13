@@ -10,6 +10,7 @@ import org.junit.Assert;
 import org.junit.rules.ExpectedException;
 import org.junit.rules.Timeout;
 import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.junit.Rule;
 
 
 public class TicTacToeTest {
@@ -121,7 +122,7 @@ public class TicTacToeTest {
    *  - conditional line 95 branch to line 96
    *  - conditional line 96 branch to line 96
    */
-  @PrepareForTest({tictactoe.class, System.class})
+  @PrepareForTest({TicTacToe.class, System.class})
   @Test
   public void parseCommandLineInpu001f3d5ef11436aeae4() throws Exception {
 
