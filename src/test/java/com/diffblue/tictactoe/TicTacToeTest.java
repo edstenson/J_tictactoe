@@ -9,7 +9,6 @@ import com.diffblue.tictactoe.TicTacToe;
 import org.junit.Assert;
 import org.junit.rules.ExpectedException;
 import org.junit.rules.Timeout;
-import org.powermock.core.classloader.annotations.PrepareForTest;
 
 public class TicTacToeTest {
 
