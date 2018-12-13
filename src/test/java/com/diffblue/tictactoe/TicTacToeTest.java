@@ -100,7 +100,7 @@ public class TicTacToeTest {
     final String[] theBoard = {null, null, null};
 
     // Act
-    final String retval = tictactoe.checkWinner(theBoard);
+    final String retval = TicTacToe.checkWinner(theBoard);
 
     // Assert result
     Assert.assertNull(retval);
