@@ -21,6 +21,8 @@ public class tictactoeTest {
  * This test case covers the entire method.
  */
 
+import com.diffblue.tictactoe.tictactoe;
+
 //  @PrepareForTest({tictactoe.class, System.class})
   @Test
   public void displayHelp000c329d8c1bf87f0c0() throws Exception {
