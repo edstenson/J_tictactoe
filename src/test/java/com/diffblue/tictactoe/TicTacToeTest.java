@@ -8,6 +8,7 @@ import org.junit.Test;
 import com.diffblue.tictactoe.TicTacToe;
 import org.junit.Assert;
 import org.junit.rules.ExpectedException;
+import org.junit.rules.Timeout;
 
 public class TicTacToeTest {
 
