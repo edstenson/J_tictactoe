@@ -39,7 +39,7 @@ public class TicTacToeTest {
   public void constructor30007762b8bf14a240e9() {
 
     // Act, creating object to test constructor
-    final tictactoe objectUnderTest = new tictactoe();
+    final TicTacToe objectUnderTest = new TicTacToe();
 
     // Method returns void, testing that no exception is thrown
   }
