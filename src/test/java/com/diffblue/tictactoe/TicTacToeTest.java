@@ -7,6 +7,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import com.diffblue.tictactoe.TicTacToe;
 import org.junit.Assert;
+import org.junit.rules.ExpectedException;
 
 public class TicTacToeTest {
 
