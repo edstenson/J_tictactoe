@@ -59,7 +59,7 @@ public class TicTacToeTest {
     final int abc = 0;
 
     // Act
-    final int retval = tictactoe.printBoard(abc);
+    final int retval = TicTacToe.printBoard(abc);
 
     // Assert result
     Assert.assertEquals(0, retval);
