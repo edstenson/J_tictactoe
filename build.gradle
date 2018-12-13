@@ -26,6 +26,9 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+    
+    // Powermock
+    testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: '1.6.5'
 }
 
 // Define the main class for the application
