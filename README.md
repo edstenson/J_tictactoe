@@ -1,4 +1,4 @@
-# sandbox
+# TicTacToe sandbox
 
 To build in Gradle:  
 
