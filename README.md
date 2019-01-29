@@ -2,7 +2,14 @@
 
 This is still work in progress.
 
-To compile:  JavaC tic3.java
+To build in Gradle:  
 
-To run:  java tic3
+1. Check that the build.gradle file has this line, specifying the main class name:
+
+   // Define the main class for the application
+   mainClassName = 'G_tictactoe.App'
+
+2. Compile the code:
+
+   gradle build
 
