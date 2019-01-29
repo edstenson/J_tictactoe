@@ -1,7 +1,5 @@
 # sandbox
 
-This is still work in progress.
-
 To build in Gradle:  
 
 1. Check that the build.gradle file has this line, specifying the main class name:
