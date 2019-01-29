@@ -13,5 +13,7 @@ To build in Gradle:
 
 2. Compile the code:
 
+   ```
    gradle build
+   ```
 
