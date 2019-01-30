@@ -1,4 +1,4 @@
-// Copyright 2018 Diffblue limited. All rights reserved.
+// Copyright 2018-2019 Diffblue limited. All rights reserved.
 
 package com.diffblue.tictactoe;
 
@@ -9,21 +9,27 @@ public class TicTacToe {
 
   public static void main(String[] args) {
 
-//  Set up initial variables
-//  ========================
+    /**
+     * Set up initial variables.
+     */
     String[] ourBoard = {"__", "__", "__", "__", "__", "__", "__", "__", "__"};
     String thisPlayer;
     int moveCount = 0;
 
-//  Show help and then show empty board
-//  ===================================
+
+    /**
+     * Display help.
+     * Display empty board.
+     */
     System.out.println("\n\n\n");
     displayHelp();
     System.out.println("Here's the board. Good luck.\n");
     printBoard(ourBoard);
 
-//  Choose who goes first
-//  =====================
+
+    /**
+     * Choose who goes first.
+     */
     Random rand = new Random();
     thisPlayer = "P1";
     int n = rand.nextInt(2);
@@ -33,8 +39,9 @@ public class TicTacToe {
     System.out.println("=====================\n");
 
 
-//  Main playing loop
-//  =================
+    /**
+     * This is the main playing loop.
+     */
     String theWinner;
 
     for (int play = 1; play < 10; play++) {
@@ -61,17 +68,22 @@ public class TicTacToe {
         System.exit(0);
       }
  
-    // Switch to the other player
+      /**
+       * Switch to the other player.
+       */
       if (thisPlayer == "P1") { thisPlayer = "P2"; } else { thisPlayer = "P1"; }  
     }
 
-    // Game is over without a winner
+    /**
+     * Game is over without a winner.
+     */
     System.out.println("It's a draw. Well played.\n\n\n\n\n\n\n\n\n\n");
     }
 
 
-//  Print the current status of the board
-//  =====================================
+    /**
+     * Print the current status of the board.
+     */
     public static void printBoard(String[] theBoard) {
       for (int row = 0; row < 3; row++) {
         System.out.println(theBoard[3 * row + 0] + " " + theBoard[3 * row + 1] + " " + theBoard[3 * row + 2]);
@@ -81,24 +93,27 @@ public class TicTacToe {
     }
 
 
-//  Dummy method that's easy to test
-//  ================================
+    /**
+     * Dummy method that's easy to test.
+     */
     public static int printBoard(int abc) {
       return(abc++);
     }
 
   
   
-//  Check for special commands such as quit or man
-//  ==============================================
+    /**
+     * Check for special commands such as quit or man.
+     */
     public static void parseCommandLine(int command) {
       if (command == 99) { System.exit(0); }
       if (command == 88) { displayHelp(); }
     }
 
 
-//  Display help page
-//  =================
+    /*
+     * Display help page.
+     */
     public static void displayHelp() {
       System.out.println("\n\nWelcome to Diffblue TicTacToe\n=============================\n");
       System.out.println("The goal of the game is simple: run away from the zombies!");
@@ -111,20 +126,25 @@ public class TicTacToe {
     }
 
 
-//  Check if anyone has won yet
-//  ===========================
-// Check rows
+    /**
+     * Check if anyone has won yet.
+     * Check rows first.
+     */
     public static String checkWinner(String[] theBoard) {
             if (theBoard[0] == theBoard[1] && theBoard[0] == theBoard[2]) { return theBoard[0]; }
             if (theBoard[3] == theBoard[4] && theBoard[3] == theBoard[5]) { return theBoard[3]; }
             if (theBoard[6] == theBoard[7] && theBoard[6] == theBoard[8]) { return theBoard[6]; }
             
-            // Check columns
+            /**
+             * Check columns.
+             */
             if (theBoard[0] == theBoard[3] && theBoard[0] == theBoard[6]) { return theBoard[0]; }
             if (theBoard[1] == theBoard[4] && theBoard[1] == theBoard[7]) { return theBoard[1]; }
             if (theBoard[2] == theBoard[5] && theBoard[2] == theBoard[8]) { return theBoard[2]; }
             
-            //  Check diagonals
+            /**
+             * Check diagonals.
+             */
             if (theBoard[0] == theBoard[4] && theBoard[0] == theBoard[8]) { return theBoard[0]; }
             if (theBoard[2] == theBoard[4] && theBoard[2] == theBoard[6]) { return theBoard[2]; }
 
