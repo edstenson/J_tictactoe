@@ -83,6 +83,7 @@ public class TicTacToe {
 
     /**
      * Print the current status of the board.
+     * @param theBoard  The current status of the board.
      */
     public static void printBoard(String[] theBoard) {
       for (int row = 0; row < 3; row++) {
