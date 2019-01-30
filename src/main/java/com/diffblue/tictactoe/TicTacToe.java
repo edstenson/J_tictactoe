@@ -131,24 +131,24 @@ public class TicTacToe {
      * Check rows first.
      */
     public static String checkWinner(String[] theBoard) {
-            if (theBoard[0] == theBoard[1] && theBoard[0] == theBoard[2]) { return theBoard[0]; }
-            if (theBoard[3] == theBoard[4] && theBoard[3] == theBoard[5]) { return theBoard[3]; }
-            if (theBoard[6] == theBoard[7] && theBoard[6] == theBoard[8]) { return theBoard[6]; }
+      if (theBoard[0] == theBoard[1] && theBoard[0] == theBoard[2]) { return theBoard[0]; }
+      if (theBoard[3] == theBoard[4] && theBoard[3] == theBoard[5]) { return theBoard[3]; }
+      if (theBoard[6] == theBoard[7] && theBoard[6] == theBoard[8]) { return theBoard[6]; }
             
-            /**
-             * Check columns.
-             */
-            if (theBoard[0] == theBoard[3] && theBoard[0] == theBoard[6]) { return theBoard[0]; }
-            if (theBoard[1] == theBoard[4] && theBoard[1] == theBoard[7]) { return theBoard[1]; }
-            if (theBoard[2] == theBoard[5] && theBoard[2] == theBoard[8]) { return theBoard[2]; }
+      /**
+       * Check columns.
+       */
+      if (theBoard[0] == theBoard[3] && theBoard[0] == theBoard[6]) { return theBoard[0]; }
+      if (theBoard[1] == theBoard[4] && theBoard[1] == theBoard[7]) { return theBoard[1]; }
+      if (theBoard[2] == theBoard[5] && theBoard[2] == theBoard[8]) { return theBoard[2]; }
             
-            /**
-             * Check diagonals.
-             */
-            if (theBoard[0] == theBoard[4] && theBoard[0] == theBoard[8]) { return theBoard[0]; }
-            if (theBoard[2] == theBoard[4] && theBoard[2] == theBoard[6]) { return theBoard[2]; }
+      /**
+       * Check diagonals.
+       */
+      if (theBoard[0] == theBoard[4] && theBoard[0] == theBoard[8]) { return theBoard[0]; }
+      if (theBoard[2] == theBoard[4] && theBoard[2] == theBoard[6]) { return theBoard[2]; }
 
-            return "none";
-        }
+      return "none";
+    }
 }
 
