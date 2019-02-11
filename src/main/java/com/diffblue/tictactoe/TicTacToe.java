@@ -64,7 +64,7 @@ public class TicTacToe {
             
             theWinner = checkWinner(ourBoard);
             if(theWinner == "P1" || theWinner == "P2") {
-                System.out.println("And the crowd goes wild for " + theWinner);
+            //    System.out.println("And the crowd goes wild for " + theWinner);
                 System.exit(0);
             }
             
